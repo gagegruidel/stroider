@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Blaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title-container">
+        <h1 id="gameTitle">Stroid Shooter</h1>
+        <button id="startGame">Start Game</button>
+    </div>
+    <div class="game-container">
+        <div id="score">Score: 0</div>
+        <div id="player"></div>
+        <div id="gameOverMessage" class="hidden">
+            <p>Game Over!</p>
+            <button id="restartGame">Restart</button>
+        </div>
+    </div>
+    <audio id="gameMusic" src="galaxyloop.mp3" loop></audio>
+    <audio id="hitSound" src="hit.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

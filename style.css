@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: 
+        radial-gradient(circle at 10% 10%, rgba(255, 0, 150, 0.6), transparent 10px), 
+        radial-gradient(circle at 25% 25%, rgba(0, 150, 255, 0.5), transparent 12px),
+        radial-gradient(circle at 45% 30%, rgba(0, 255, 0, 0.4), transparent 8px),
+        radial-gradient(circle at 60% 50%, rgba(255, 255, 0, 0.5), transparent 10px),
+        radial-gradient(circle at 70% 70%, rgba(255, 165, 0, 0.5), transparent 15px),
+        radial-gradient(circle at 80% 20%, rgba(75, 0, 130, 0.5), transparent 12px),
+        radial-gradient(circle at 90% 85%, rgba(255, 20, 147, 0.5), transparent 10px),
+        radial-gradient(circle at 50% 50%, rgba(255, 69, 0, 0.6), transparent 25px),
+        radial-gradient(circle at 15% 75%, rgba(0, 255, 255, 0.4), transparent 10px),
+        radial-gradient(circle at 35% 5%, rgba(255, 182, 193, 0.4), transparent 15px),
+        radial-gradient(circle at 60% 20%, rgba(32, 178, 170, 0.5), transparent 18px),
+        radial-gradient(circle at 80% 80%, rgba(255, 105, 180, 0.5), transparent 10px),
+        radial-gradient(circle at 20% 40%, rgba(255, 215, 0, 0.5), transparent 12px);
+    background-size: 200px 200px, 150px 150px, 120px 120px, 100px 100px, 250px 250px,
+                    180px 180px, 210px 210px, 160px 160px, 140px 140px, 230px 230px,
+                    170px 170px, 200px 200px;
+    background-position: top left, top right, bottom left, bottom right, center, 
+                         20% 30%, 10% 80%, 70% 10%, 30% 40%, 60% 70%, 
+                         50% 10%, 80% 30%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#gameTitle {
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(to right, lightgreen, lightblue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#startGame, #restartGame {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: lightblue;
+    border: none;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+.game-container {
+    width: 300px;
+    height: 500px;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    margin-top: 20px;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    z-index: 100;
+}
+
+#player {
+    position: absolute;
+    bottom: 10px;
+    left: 125px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid #00ff99;
+}
+
+.beat {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.bullet {
+    position: absolute;
+    bottom: 50px;
+    width: 5px;
+    height: 15px;
+    background-color: #ffffff;
+}
+
+.hit {
+    background-color: yellow;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameOverMessage p {
+    font-size: 32px;
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
